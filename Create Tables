@@ -7,3 +7,50 @@ CREATE TABLE Transactions (
     notes VARCHAR(255),
     FOREIGN KEY (category_id) REFERENCES Categories(category_id)
 );
+
+
+
+
+Schema for category table:-
+CREATE TABLE Categories (
+    category_id INT PRIMARY KEY AUTO_INCREMENT,
+    category_name VARCHAR(50) NOT NULL,
+    category_type ENUM('income', 'expense', 'savings') NOT NULL
+);
+
+
+
+
+CREATE TABLE Accounts (
+    account_id INT PRIMARY KEY AUTO_INCREMENT,
+    account_name VARCHAR(50) NOT NULL,
+    account_type VARCHAR(50) NOT NULL,
+    current_balance DECIMAL(10, 2) NOT NULL,
+    notes VARCHAR(255)
+);
+
+
+
+CREATE TABLE Budget (
+    BudgetID INT PRIMARY KEY AUTO_INCREMENT,
+    CategoryID INT,
+    TimePeriod VARCHAR(20),
+    Amount DECIMAL(10, 2) NOT NULL,
+    Notes TEXT,
+    FOREIGN KEY (CategoryID) REFERENCES Categories(CategoryID)
+);
+
+
+
+
+CREATE TABLE RecurringTransaction (
+    RecurringTransactionID INT PRIMARY KEY AUTO_INCREMENT,
+    Description VARCHAR(255),
+    Amount DECIMAL(10, 2) NOT NULL,
+    CategoryID INT,
+    Frequency VARCHAR(20),
+    StartDate DATE,
+    EndDate DATE,
+    Notes TEXT,
+    FOREIGN KEY (CategoryID) REFERENCES Categories(CategoryID)
+);
