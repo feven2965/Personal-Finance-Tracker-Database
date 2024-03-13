@@ -30,4 +30,5 @@ INSERT INTO RecurringTransaction (Description, Amount, CategoryID, Frequency, St
 VALUES ('Monthly rent', 1000.00, 2, 'Monthly', '2024-03-01', '2024-12-31', 'Apartment rent');
 
 
-These examples demonstrate how you can use the tables to record transactions, categorize them, manage accounts, allocate budgets, and set up recurring transactions for your personal finance tracking system.
+These examples demonstrate how you can use the tables to record transactions, categorize them, manage accounts, allocate budgets, and set up
+recurring transactions for your personal finance tracking system.
