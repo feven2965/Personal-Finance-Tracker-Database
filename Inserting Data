@@ -1,0 +1,33 @@
+Here's an example of how you can use these tables for a personal finance tracker:
+
+1. **Transaction Entry:**
+
+INSERT INTO Transactions (date, description, amount, category_id, notes)
+VALUES ('2024-03-13', 'Grocery shopping', 50.00, 1, 'Weekly groceries');
+
+
+2. **Category Entry:**
+
+INSERT INTO Categories (category_name, category_type)
+VALUES ('Groceries', 'expense');
+
+
+3. **Account Entry:**
+
+INSERT INTO Accounts (account_name, account_type, current_balance, notes)
+VALUES ('Savings Account', 'savings', 5000.00, 'Emergency fund');
+
+
+4. **Budget Allocation:**
+
+INSERT INTO Budget (CategoryID, TimePeriod, Amount, Notes)
+VALUES (1, 'Monthly', 300.00, 'Budget for groceries');
+
+
+5. **Recurring Transaction Setup:**
+
+INSERT INTO RecurringTransaction (Description, Amount, CategoryID, Frequency, StartDate, EndDate, Notes)
+VALUES ('Monthly rent', 1000.00, 2, 'Monthly', '2024-03-01', '2024-12-31', 'Apartment rent');
+
+
+These examples demonstrate how you can use the tables to record transactions, categorize them, manage accounts, allocate budgets, and set up recurring transactions for your personal finance tracking system.
