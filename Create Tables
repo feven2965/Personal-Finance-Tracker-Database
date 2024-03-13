@@ -1,3 +1,5 @@
+
+--create Tansaction Table
 CREATE TABLE Transactions (
     transaction_id INT PRIMARY KEY AUTO_INCREMENT,
     date DATE NOT NULL,
@@ -11,7 +13,7 @@ CREATE TABLE Transactions (
 
 
 
-Schema for category table:-
+--create Category Table
 CREATE TABLE Categories (
     category_id INT PRIMARY KEY AUTO_INCREMENT,
     category_name VARCHAR(50) NOT NULL,
@@ -21,6 +23,7 @@ CREATE TABLE Categories (
 
 
 
+Create Accounts Table
 CREATE TABLE Accounts (
     account_id INT PRIMARY KEY AUTO_INCREMENT,
     account_name VARCHAR(50) NOT NULL,
@@ -30,7 +33,7 @@ CREATE TABLE Accounts (
 );
 
 
-
+--Create Budget Table
 CREATE TABLE Budget (
     BudgetID INT PRIMARY KEY AUTO_INCREMENT,
     CategoryID INT,
@@ -43,6 +46,7 @@ CREATE TABLE Budget (
 
 
 
+Create Recurring Transaction Table
 CREATE TABLE RecurringTransaction (
     RecurringTransactionID INT PRIMARY KEY AUTO_INCREMENT,
     Description VARCHAR(255),
