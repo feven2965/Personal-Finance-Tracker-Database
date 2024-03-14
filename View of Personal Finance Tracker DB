@@ -1,7 +1,7 @@
-Here's an example of how you could create views for a personal finance tracker database:
-Let's say we want to create two views:
-TotalExpensesPerCategory: This view will display the total expenses for each expense category.
-MonthlyIncomeSummary: This view will summarize monthly income.
+--Here's an example of how you could create views for a personal finance tracker database:
+--Let's say we want to create two views:
+--TotalExpensesPerCategory: This view will display the total expenses for each expense category.
+--MonthlyIncomeSummary: This view will summarize monthly income.
 
 
 
@@ -21,7 +21,7 @@ JOIN Categories c ON t.category_id = c.category_id
 WHERE c.category_type = 'income'
 GROUP BY MONTH(t.date), YEAR(t.date);
 
-With these views, you can easily retrieve summarized information about expenses per category and monthly 
-income without having to write complex SQL queries every time. You can simply query these views to get the desired information.
+--With these views, you can easily retrieve summarized information about expenses per category and monthly 
+--income without having to write complex SQL queries every time. You can simply query these views to get the desired information.
 
 
