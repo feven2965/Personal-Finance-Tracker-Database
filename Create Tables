@@ -23,7 +23,7 @@ CREATE TABLE Categories (
 
 
 
-Create Accounts Table
+--Create Accounts Table
 CREATE TABLE Accounts (
     account_id INT PRIMARY KEY AUTO_INCREMENT,
     account_name VARCHAR(50) NOT NULL,
@@ -46,7 +46,7 @@ CREATE TABLE Budget (
 
 
 
-Create Recurring Transaction Table
+--Create Recurring Transaction Table
 CREATE TABLE RecurringTransaction (
     RecurringTransactionID INT PRIMARY KEY AUTO_INCREMENT,
     Description VARCHAR(255),
